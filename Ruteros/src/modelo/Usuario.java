@@ -1,3 +1,5 @@
+package modelo;
+
 public abstract class Usuario implements IUsuario {
     private int id;
     private String nombre;

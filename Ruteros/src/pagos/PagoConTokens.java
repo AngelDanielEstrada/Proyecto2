@@ -1,7 +1,7 @@
 package pagos;
 
-import modelos.Viaje;
-import modelos.Pasajero;
+import modelo.Viaje;
+import modelo.Pasajero;
 import pagos.exceptions.SaldoInsuficienteException;
 import pagos.exceptions.PagoNoConfirmadoException;
 

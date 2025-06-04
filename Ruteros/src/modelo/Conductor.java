@@ -1,5 +1,7 @@
 package modelo;
 
+import excepciones.PagoNoConfirmadoException;
+
 public class Conductor extends Usuario {
 
     public Conductor(int id, String nombre) {
@@ -25,7 +27,7 @@ public class Conductor extends Usuario {
      * Aquí puedes asumir que el conductor valida visualmente el pago.
      */
     public void confirmarPagoEfectivo(Viaje v) {
-        if (v != null && v.getPago() instanceof PagoEnEfectivo) {
+        if (v != null && v.getPago() instanceof pago.PagoEnEfectivo) {
             System.out.println("Pago en efectivo confirmado para el viaje ID: " + v.getId());
         } else {
             throw new PagoNoConfirmadoException("El pago no es en efectivo o el viaje es inválido.");
